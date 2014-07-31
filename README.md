@@ -1,4 +1,4 @@
 SDFeedParser
 ============
 
-Simple Objective-C implementation of UIButton class with extra features.
+Objective-C parser for the JSON API plugin for Wordpress.
