@@ -1,6 +1,6 @@
 //
 //  SDFeedParser.h
-//  Blogly
+//  SDFeedParser
 //
 //  Created by Sebastian Dobrincu on 17/07/14.
 //  Copyright (c) 2014 Sebastian Dobrincu. All rights reserved.
