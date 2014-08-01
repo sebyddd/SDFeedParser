@@ -15,7 +15,7 @@
 @interface SDFeedParser : NSObject
 
 typedef void(^completionBlock)(void);
-- (void)parseWithURL:(NSString*)urlString withCompletion:(completionBlock)completionBlock;
+- (void)parseWithURL:(NSString*)urlString withCompletion:(void (^)(NSArray *postsArray))completionBlock;
 
 @property (nonatomic) NSInteger postsCount;
 @property (nonatomic) NSArray *postsArray;
