@@ -72,7 +72,7 @@
                 currentPost.authorInfo = eachPost[@"author"];
                 
                 //Fetch posts comments
-                NSMutableArray *allComments = [[NSMutableArray alloc]initWithCapacity:[responseObject[@"comment_count"] integerValue]];
+                NSMutableArray *allComments = [[NSMutableArray alloc]initWithCapacity:[eachPost[@"comment_count"] integerValue]];
                 NSArray *fetchedCommentsArray = eachPost[@"comments"];
                 for (NSDictionary *eachComment in fetchedCommentsArray) {
                     SDComment *currentComment = [SDComment new];
@@ -85,9 +85,9 @@
                     [allComments addObject:currentComment];
                 }
                 currentPost.commentsArray = [allComments copy];
-                currentPost.commentsCount = [responseObject[@"comment_count"] integerValue];
+                currentPost.commentsCount = [eachPost[@"comment_count"] integerValue];
                 currentPost.status = responseObject[@"comment_status"];
-            
+
                 [allPosts addObject:currentPost];
             }
             _postsArray = [allPosts copy];
