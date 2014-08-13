@@ -6,6 +6,7 @@ Objective-C parser for the JSON API (https://wordpress.org/plugins/json-api/) pl
 
 ## Installation
 1. To install this library, simply copy the 'SDFeedParser' folder into your project, and import it using:
+
 				#import "SDFeedParser.h"
 
 2. You will also need AFNetworking in order to use this library. You can find it here: https://github.com/AFNetworking/AFNetworking
