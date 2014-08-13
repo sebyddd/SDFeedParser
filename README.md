@@ -14,7 +14,7 @@ _*CocoaPods coming soon_
 
 
 ## How to use
-        SDFeedParser *parser = [[SDFeedParser alloc]init];
+       SDFeedParser *parser = [[SDFeedParser alloc]init];
        [parser parseWithURL:@"http://yourblogURL.com/?json=1" withCompletion:^(NSArray *postsArray) {
                 NSLog(@"%@", postsArray);
         }];
@@ -23,25 +23,25 @@ _*CocoaPods coming soon_
 ## Available properties
 **SDPost:**
 
-          @property (nonatomic) NSInteger ID;
-          @property (nonatomic) NSString *URL;
-          @property (nonatomic) NSString *slug;
-          @property (nonatomic) NSString *title;
-          @property (nonatomic) NSString *plainTitle;
-          @property (nonatomic) NSString *thumbnailURL;
-          @property (nonatomic) NSString *status;
-          @property (nonatomic) NSString *content;
-          @property (nonatomic) NSString *plainContent;
-          @property (nonatomic) NSInteger contentReadingMinutes;
-          @property (nonatomic) NSString *excerpt;
-          @property (nonatomic) NSString *date;
-          @property (nonatomic) NSString *lastModifiedDate;
-          @property (nonatomic) NSArray *categoriesArray;
-          @property (nonatomic) NSArray *tagsArray;
-          @property (nonatomic) NSDictionary *authorInfo;
-          @property (nonatomic) NSArray *commentsArray;
-          @property (nonatomic) NSInteger commentsCount;
-          @property (nonatomic) NSString *commentsStatus;
+        @property (nonatomic) NSInteger ID;
+        @property (nonatomic) NSString *URL;
+        @property (nonatomic) NSString *slug;
+        @property (nonatomic) NSString *title;
+        @property (nonatomic) NSString *plainTitle;
+        @property (nonatomic) NSString *thumbnailURL;
+        @property (nonatomic) NSString *status;
+        @property (nonatomic) NSString *content;
+        @property (nonatomic) NSString *plainContent;
+        @property (nonatomic) NSInteger contentReadingMinutes;
+        @property (nonatomic) NSString *excerpt;
+        @property (nonatomic) NSString *date;
+        @property (nonatomic) NSString *lastModifiedDate;
+        @property (nonatomic) NSArray *categoriesArray;
+        @property (nonatomic) NSArray *tagsArray;
+        @property (nonatomic) NSDictionary *authorInfo;
+        @property (nonatomic) NSArray *commentsArray;
+        @property (nonatomic) NSInteger commentsCount;
+        @property (nonatomic) NSString *commentsStatus;
 
 **SDComment:**
 
