@@ -34,9 +34,13 @@
                 currentPost.slug = eachPost[@"slug"];
                 currentPost.URL = eachPost[@"url"];
                 currentPost.title = eachPost[@"title"];
-                currentPost.title_plain = eachPost[@"title_plain"];
+                currentPost.plainContent = eachPost[@"title_plain"];
                 currentPost.thumbnailURL = eachPost[@"thumbnail"];
                 currentPost.content = eachPost[@"content"];
+                currentPost.plainContent = [self stringByStrippingHTML:eachPost[@"content"]];
+                NSArray *postsWords = [currentPost.content componentsSeparatedByString:@" "];
+                NSInteger readingTime = postsWords.count/230;
+                currentPost.contentReadingMinutes = readingTime;
                 currentPost.excerpt = eachPost[@"excerpt"];
                 currentPost.date = eachPost[@"date"];
                 currentPost.lastModifiedDate = eachPost[@"modified"];
@@ -100,6 +104,14 @@
         NSLog(@"Error: %@", error);
     }];
     
+}
+
+-(NSString *) stringByStrippingHTML:(NSString*)string{
+    NSRange r;
+    NSString *s = string;
+    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
+        s = [s stringByReplacingCharactersInRange:r withString:@""];
+    return s;
 }
 
 @end
