@@ -1,4 +1,4 @@
-![SDFeedParser](https://dl-web.dropbox.com/get/Others/sdfeedparser.png?_subject_uid=208453269&w=AAA2hgVhn52CoPb6QW9uMArU7Yh44kyRklieMcPejSOvlA)
+![SDFeedParser](https://dl.dropboxusercontent.com/s/5gvds2nhdjm6avd/sdfeedparser.png)
 
 SDFeedParser
 ============
