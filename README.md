@@ -13,7 +13,14 @@ Objective-C parser for the JSON API (https://wordpress.org/plugins/json-api/) pl
 
 2. You will also need AFNetworking in order to use this library. You can find it here: https://github.com/AFNetworking/AFNetworking
 
-_*CocoaPods coming soon_
+## Installation with CocoaPods
+
+CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like SDFeedParser in your projects. See the "[Getting Started](http://guides.cocoapods.org/syntax/podfile.html)" guide for more information.
+
+### Podfile
+
+        platform :ios, '7.0'
+        pod "SDFeedParser", "~> "0.1"
 
 
 ## How to use
