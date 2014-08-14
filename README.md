@@ -79,3 +79,10 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
         @property (nonatomic) NSString *title;
         @property (nonatomic) NSString *description;
         @property (nonatomic) NSInteger postsCount;
+
+
+
+##License
+
+Usage is provided under the [MIT License](http://http//opensource.org/licenses/mit-license.php). See LICENSE for the full details.
+
