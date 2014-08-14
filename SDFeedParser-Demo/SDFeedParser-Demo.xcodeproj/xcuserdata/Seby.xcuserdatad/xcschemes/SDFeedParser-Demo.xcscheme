@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AFEBD0D199CB15C002A86EF"
+               BlueprintIdentifier = "9AFEBDC8199CB21C002A86EF"
                BuildableName = "SDFeedParser-Demo.app"
                BlueprintName = "SDFeedParser-Demo"
                ReferencedContainer = "container:SDFeedParser-Demo.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AFEBD2E199CB15D002A86EF"
+               BlueprintIdentifier = "9AFEBDE9199CB21C002A86EF"
                BuildableName = "SDFeedParser-DemoTests.xctest"
                BlueprintName = "SDFeedParser-DemoTests"
                ReferencedContainer = "container:SDFeedParser-Demo.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AFEBD0D199CB15C002A86EF"
+            BlueprintIdentifier = "9AFEBDC8199CB21C002A86EF"
             BuildableName = "SDFeedParser-Demo.app"
             BlueprintName = "SDFeedParser-Demo"
             ReferencedContainer = "container:SDFeedParser-Demo.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AFEBD0D199CB15C002A86EF"
+            BlueprintIdentifier = "9AFEBDC8199CB21C002A86EF"
             BuildableName = "SDFeedParser-Demo.app"
             BlueprintName = "SDFeedParser-Demo"
             ReferencedContainer = "container:SDFeedParser-Demo.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9AFEBD0D199CB15C002A86EF"
+            BlueprintIdentifier = "9AFEBDC8199CB21C002A86EF"
             BuildableName = "SDFeedParser-Demo.app"
             BlueprintName = "SDFeedParser-Demo"
             ReferencedContainer = "container:SDFeedParser-Demo.xcodeproj">
