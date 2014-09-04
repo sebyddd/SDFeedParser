@@ -67,7 +67,7 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
         @property (nonatomic) NSInteger ID;
         @property (nonatomic) NSString *slug;
         @property (nonatomic) NSString *title;
-        @property (nonatomic) NSString *description;
+        @property (nonatomic) NSString *categoryDescription;
         @property (nonatomic) NSInteger parent;
         @property (nonatomic) NSInteger postsCount;
 
@@ -77,7 +77,7 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
         @property (nonatomic) NSInteger ID;
         @property (nonatomic) NSString *slug;
         @property (nonatomic) NSString *title;
-        @property (nonatomic) NSString *description;
+        @property (nonatomic) NSString *tagDescription;
         @property (nonatomic) NSInteger postsCount;
 
 
