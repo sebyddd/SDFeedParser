@@ -11,6 +11,7 @@
 #import "SDPost+SDPostFromDictionary.h"
 #import "SDCategory+SDCategoryFromDictionary.h"
 #import "SDComment+SDCommentFromDictionary.h"
+#import "SDTag+SDTagFromDictionary.h"
 
 @implementation SDFeedParser
 
@@ -48,12 +49,8 @@
                 NSMutableArray *allTags = [[NSMutableArray alloc]init];
                 NSArray *fetchedTagsArray = eachPost[@"tags"];
                 for (NSDictionary *eachTag in fetchedTagsArray) {
-                    SDTag *currentTag = [SDTag new];
-                    currentTag.ID = [eachTag[@"id"] integerValue];
-                    currentTag.slug = eachTag[@"slug"];
-                    currentTag.title = eachTag[@"title"];
-                    currentTag.tagDescription = eachTag[@"description"];
-                    currentTag.postsCount = [eachTag[@"post_count"] integerValue];
+                    
+                    SDTag *currentTag = [SDTag SDTagFromDictionary:eachTag];
                     [allTags addObject:currentTag];
                 }
                 currentPost.tagsArray = [allTags copy];

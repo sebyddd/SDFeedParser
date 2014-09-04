@@ -56,6 +56,7 @@
 		C9C1D1FF19B9295E00CC6057 /* NSString+StringByStrippingHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */; };
 		C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */; };
 		C9C1D20519B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */; };
+		C9C1D20819B92BD900CC6057 /* SDTag+SDTagFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20719B92BD900CC6057 /* SDTag+SDTagFromDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,8 @@
 		C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCategory+SDCategoryFromDictionary.m"; sourceTree = "<group>"; };
 		C9C1D20319B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDComment+SDCommentFromDictionary.h"; sourceTree = "<group>"; };
 		C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDComment+SDCommentFromDictionary.m"; sourceTree = "<group>"; };
+		C9C1D20619B92BD900CC6057 /* SDTag+SDTagFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDTag+SDTagFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D20719B92BD900CC6057 /* SDTag+SDTagFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDTag+SDTagFromDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +286,8 @@
 				C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */,
 				C9C1D20319B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.h */,
 				C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */,
+				C9C1D20619B92BD900CC6057 /* SDTag+SDTagFromDictionary.h */,
+				C9C1D20719B92BD900CC6057 /* SDTag+SDTagFromDictionary.m */,
 			);
 			path = SDFeedParser;
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 				9AFEBE2E199CB22B002A86EF /* AFURLRequestSerialization.m in Sources */,
 				9AFEBE2B199CB22B002A86EF /* AFNetworkReachabilityManager.m in Sources */,
 				C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */,
+				C9C1D20819B92BD900CC6057 /* SDTag+SDTagFromDictionary.m in Sources */,
 				9AFEBE5A199CBA9B002A86EF /* SDWebImageManager.m in Sources */,
 				9AFEBE57199CBA9B002A86EF /* SDWebImageDecoder.m in Sources */,
 				9AFEBE59199CBA9B002A86EF /* SDWebImageDownloaderOperation.m in Sources */,
