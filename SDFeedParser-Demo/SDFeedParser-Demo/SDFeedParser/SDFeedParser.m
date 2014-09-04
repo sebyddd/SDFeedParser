@@ -8,6 +8,7 @@
 
 #import "SDFeedParser.h"
 #import "AFNetworking.h"
+#import "SDPost+SDPostFromDictionary.h"
 
 @implementation SDFeedParser
 
@@ -29,21 +30,7 @@
             NSArray *fetchedPostsArray = responseObject[@"posts"];
             for (NSDictionary *eachPost in fetchedPostsArray) {
                 
-                SDPost *currentPost = [SDPost new];
-                currentPost.ID = [eachPost[@"id"] integerValue];
-                currentPost.slug = eachPost[@"slug"];
-                currentPost.URL = eachPost[@"url"];
-                currentPost.title = eachPost[@"title"];
-                currentPost.plainContent = eachPost[@"title_plain"];
-                currentPost.thumbnailURL = eachPost[@"thumbnail"];
-                currentPost.content = eachPost[@"content"];
-                currentPost.plainContent = [self stringByStrippingHTML:eachPost[@"content"]];
-                NSArray *postsWords = [currentPost.content componentsSeparatedByString:@" "];
-                NSInteger readingTime = postsWords.count/230;
-                currentPost.contentReadingMinutes = readingTime;
-                currentPost.excerpt = eachPost[@"excerpt"];
-                currentPost.date = eachPost[@"date"];
-                currentPost.lastModifiedDate = eachPost[@"modified"];
+                SDPost *currentPost = [SDPost SDPostFromDictionary:eachPost];
                 
                 //Fetch posts category
                 NSMutableArray *allCategories = [[NSMutableArray alloc]init];
@@ -106,12 +93,6 @@
     
 }
 
--(NSString *) stringByStrippingHTML:(NSString*)string{
-    NSRange r;
-    NSString *s = string;
-    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
-        s = [s stringByReplacingCharactersInRange:r withString:@""];
-    return s;
-}
+
 
 @end
