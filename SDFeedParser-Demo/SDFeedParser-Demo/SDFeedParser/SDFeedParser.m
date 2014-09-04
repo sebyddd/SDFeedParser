@@ -53,7 +53,7 @@
                     currentCategory.ID = [eachCategory[@"id"] integerValue];
                     currentCategory.slug = eachCategory[@"slug"];
                     currentCategory.title = eachCategory[@"title"];
-                    currentCategory.description = eachCategory[@"description"];
+                    currentCategory.categoryDescription = eachCategory[@"description"];
                     currentCategory.parent = [eachCategory[@"parent"] integerValue];
                     currentCategory.postsCount = [eachCategory[@"post_count"] integerValue];
                     [allCategories addObject:currentCategory];
@@ -68,7 +68,7 @@
                     currentTag.ID = [eachTag[@"id"] integerValue];
                     currentTag.slug = eachTag[@"slug"];
                     currentTag.title = eachTag[@"title"];
-                    currentTag.description = eachTag[@"description"];
+                    currentTag.tagDescription = eachTag[@"description"];
                     currentTag.postsCount = [eachTag[@"post_count"] integerValue];
                     [allTags addObject:currentTag];
                 }
