@@ -20,7 +20,7 @@
     self.tableView.tableFooterView = [UIView new];
     
     SDFeedParser *feedParser = [[SDFeedParser alloc]init];
-    [feedParser parseWithURL:@"http://dobrincusebastian.com/api/get_recent_posts/" withCompletion:^(NSArray *postsArray) {
+    [feedParser parseWithURL:@"http://moma.org/wp/inside_out/api/get_recent_posts/" withCompletion:^(NSArray *postsArray) {
         SDpostsArray = postsArray;
         [self.tableView reloadData];
     }];
