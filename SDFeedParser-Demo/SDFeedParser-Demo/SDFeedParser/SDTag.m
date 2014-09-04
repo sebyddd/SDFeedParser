@@ -10,4 +10,6 @@
 
 @implementation SDTag
 
+@synthesize description;
+
 @end

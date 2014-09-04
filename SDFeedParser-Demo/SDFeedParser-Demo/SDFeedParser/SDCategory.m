@@ -10,4 +10,6 @@
 
 @implementation SDCategory
 
+@synthesize description;
+
 @end
