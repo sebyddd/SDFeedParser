@@ -11,7 +11,7 @@
 
 @implementation SDFeedParser
 
-- (void)parseWithURL:(NSString *)urlString withCompletion:(void (^)(NSArray *))completionBlock {
+- (void)parseWithURL:(NSString *)urlString withCompletion:(CompletionBlock)completionBlock {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
