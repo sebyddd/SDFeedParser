@@ -54,6 +54,7 @@
 		9AFEBE62199CBA9B002A86EF /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFEBE52199CBA9B002A86EF /* UIView+WebCacheOperation.m */; };
 		C9C1D1FC19B928C500CC6057 /* SDPost+SDPostFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */; };
 		C9C1D1FF19B9295E00CC6057 /* NSString+StringByStrippingHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */; };
+		C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,8 @@
 		C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDPost+SDPostFromDictionary.m"; sourceTree = "<group>"; };
 		C9C1D1FD19B9295E00CC6057 /* NSString+StringByStrippingHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringByStrippingHTML.h"; sourceTree = "<group>"; };
 		C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringByStrippingHTML.m"; sourceTree = "<group>"; };
+		C9C1D20019B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCategory+SDCategoryFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCategory+SDCategoryFromDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +276,8 @@
 				C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */,
 				C9C1D1FD19B9295E00CC6057 /* NSString+StringByStrippingHTML.h */,
 				C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */,
+				C9C1D20019B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.h */,
+				C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */,
 			);
 			path = SDFeedParser;
 			sourceTree = "<group>";
@@ -472,6 +477,7 @@
 				9AFEBE54199CBA9B002A86EF /* NSData+ImageContentType.m in Sources */,
 				9AFEBE2E199CB22B002A86EF /* AFURLRequestSerialization.m in Sources */,
 				9AFEBE2B199CB22B002A86EF /* AFNetworkReachabilityManager.m in Sources */,
+				C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */,
 				9AFEBE5A199CBA9B002A86EF /* SDWebImageManager.m in Sources */,
 				9AFEBE57199CBA9B002A86EF /* SDWebImageDecoder.m in Sources */,
 				9AFEBE59199CBA9B002A86EF /* SDWebImageDownloaderOperation.m in Sources */,

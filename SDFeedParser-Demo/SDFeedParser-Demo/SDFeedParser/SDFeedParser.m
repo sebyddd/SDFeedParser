@@ -9,6 +9,7 @@
 #import "SDFeedParser.h"
 #import "AFNetworking.h"
 #import "SDPost+SDPostFromDictionary.h"
+#import "SDCategory+SDCategoryFromDictionary.h"
 
 @implementation SDFeedParser
 
@@ -36,13 +37,8 @@
                 NSMutableArray *allCategories = [[NSMutableArray alloc]init];
                 NSArray *fetchedCategoriesArray = eachPost[@"categories"];
                 for (NSDictionary *eachCategory in fetchedCategoriesArray) {
-                    SDCategory *currentCategory = [SDCategory new];
-                    currentCategory.ID = [eachCategory[@"id"] integerValue];
-                    currentCategory.slug = eachCategory[@"slug"];
-                    currentCategory.title = eachCategory[@"title"];
-                    currentCategory.categoryDescription = eachCategory[@"description"];
-                    currentCategory.parent = [eachCategory[@"parent"] integerValue];
-                    currentCategory.postsCount = [eachCategory[@"post_count"] integerValue];
+                    
+                    SDCategory *currentCategory = [SDCategory SDCategoryFromDictionary:eachCategory];
                     [allCategories addObject:currentCategory];
                 }
                 currentPost.categoriesArray = [allCategories copy];
