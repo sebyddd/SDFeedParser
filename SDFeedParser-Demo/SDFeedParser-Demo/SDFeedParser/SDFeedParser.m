@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "SDPost+SDPostFromDictionary.h"
 #import "SDCategory+SDCategoryFromDictionary.h"
+#import "SDComment+SDCommentFromDictionary.h"
 
 @implementation SDFeedParser
 
@@ -62,13 +63,8 @@
                 NSMutableArray *allComments = [[NSMutableArray alloc]initWithCapacity:[eachPost[@"comment_count"] integerValue]];
                 NSArray *fetchedCommentsArray = eachPost[@"comments"];
                 for (NSDictionary *eachComment in fetchedCommentsArray) {
-                    SDComment *currentComment = [SDComment new];
-                    currentComment.ID = [eachComment[@"id"] integerValue];
-                    currentComment.name = eachComment[@"name"];
-                    currentComment.url = eachComment[@"url"];
-                    currentComment.date = eachComment[@"date"];
-                    currentComment.content = eachComment[@"content"];
-                    currentComment.parent = [eachComment[@"parent"] integerValue];
+                    
+                    SDComment *currentComment = [SDComment SDCommentFromDictionary:eachComment];
                     [allComments addObject:currentComment];
                 }
                 currentPost.commentsArray = [allComments copy];

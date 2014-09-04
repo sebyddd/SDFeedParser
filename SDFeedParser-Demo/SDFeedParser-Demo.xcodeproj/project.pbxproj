@@ -55,6 +55,7 @@
 		C9C1D1FC19B928C500CC6057 /* SDPost+SDPostFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */; };
 		C9C1D1FF19B9295E00CC6057 /* NSString+StringByStrippingHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */; };
 		C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */; };
+		C9C1D20519B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,8 @@
 		C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringByStrippingHTML.m"; sourceTree = "<group>"; };
 		C9C1D20019B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCategory+SDCategoryFromDictionary.h"; sourceTree = "<group>"; };
 		C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCategory+SDCategoryFromDictionary.m"; sourceTree = "<group>"; };
+		C9C1D20319B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDComment+SDCommentFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDComment+SDCommentFromDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +281,8 @@
 				C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */,
 				C9C1D20019B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.h */,
 				C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */,
+				C9C1D20319B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.h */,
+				C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */,
 			);
 			path = SDFeedParser;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 				9AFEBE30199CB22B002A86EF /* AFURLSessionManager.m in Sources */,
 				9AFEBE2D199CB22B002A86EF /* AFURLConnectionOperation.m in Sources */,
 				9AFEBE5B199CBA9B002A86EF /* SDWebImagePrefetcher.m in Sources */,
+				C9C1D20519B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m in Sources */,
 				9AFEBE62199CBA9B002A86EF /* UIView+WebCacheOperation.m in Sources */,
 				9AFEBE28199CB22B002A86EF /* AFHTTPRequestOperation.m in Sources */,
 				C9C1D1FF19B9295E00CC6057 /* NSString+StringByStrippingHTML.m in Sources */,
