@@ -8,10 +8,14 @@
 
 #import "SDFeedParser.h"
 #import "AFNetworking.h"
+#import "SDPost+SDPostFromDictionary.h"
+#import "SDCategory+SDCategoryFromDictionary.h"
+#import "SDComment+SDCommentFromDictionary.h"
+#import "SDTag+SDTagFromDictionary.h"
 
 @implementation SDFeedParser
 
-- (void)parseWithURL:(NSString *)urlString withCompletion:(void (^)(NSArray *))completionBlock {
+- (void)parseWithURL:(NSString *)urlString withCompletion:(CompletionBlock)completionBlock {
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -29,33 +33,14 @@
             NSArray *fetchedPostsArray = responseObject[@"posts"];
             for (NSDictionary *eachPost in fetchedPostsArray) {
                 
-                SDPost *currentPost = [SDPost new];
-                currentPost.ID = [eachPost[@"id"] integerValue];
-                currentPost.slug = eachPost[@"slug"];
-                currentPost.URL = eachPost[@"url"];
-                currentPost.title = eachPost[@"title"];
-                currentPost.plainContent = eachPost[@"title_plain"];
-                currentPost.thumbnailURL = eachPost[@"thumbnail"];
-                currentPost.content = eachPost[@"content"];
-                currentPost.plainContent = [self stringByStrippingHTML:eachPost[@"content"]];
-                NSArray *postsWords = [currentPost.content componentsSeparatedByString:@" "];
-                NSInteger readingTime = postsWords.count/230;
-                currentPost.contentReadingMinutes = readingTime;
-                currentPost.excerpt = eachPost[@"excerpt"];
-                currentPost.date = eachPost[@"date"];
-                currentPost.lastModifiedDate = eachPost[@"modified"];
+                SDPost *currentPost = [SDPost SDPostFromDictionary:eachPost];
                 
                 //Fetch posts category
                 NSMutableArray *allCategories = [[NSMutableArray alloc]init];
                 NSArray *fetchedCategoriesArray = eachPost[@"categories"];
                 for (NSDictionary *eachCategory in fetchedCategoriesArray) {
-                    SDCategory *currentCategory = [SDCategory new];
-                    currentCategory.ID = [eachCategory[@"id"] integerValue];
-                    currentCategory.slug = eachCategory[@"slug"];
-                    currentCategory.title = eachCategory[@"title"];
-                    currentCategory.categoryDescription = eachCategory[@"description"];
-                    currentCategory.parent = [eachCategory[@"parent"] integerValue];
-                    currentCategory.postsCount = [eachCategory[@"post_count"] integerValue];
+                    
+                    SDCategory *currentCategory = [SDCategory SDCategoryFromDictionary:eachCategory];
                     [allCategories addObject:currentCategory];
                 }
                 currentPost.categoriesArray = [allCategories copy];
@@ -64,12 +49,8 @@
                 NSMutableArray *allTags = [[NSMutableArray alloc]init];
                 NSArray *fetchedTagsArray = eachPost[@"tags"];
                 for (NSDictionary *eachTag in fetchedTagsArray) {
-                    SDTag *currentTag = [SDTag new];
-                    currentTag.ID = [eachTag[@"id"] integerValue];
-                    currentTag.slug = eachTag[@"slug"];
-                    currentTag.title = eachTag[@"title"];
-                    currentTag.tagDescription = eachTag[@"description"];
-                    currentTag.postsCount = [eachTag[@"post_count"] integerValue];
+                    
+                    SDTag *currentTag = [SDTag SDTagFromDictionary:eachTag];
                     [allTags addObject:currentTag];
                 }
                 currentPost.tagsArray = [allTags copy];
@@ -79,13 +60,8 @@
                 NSMutableArray *allComments = [[NSMutableArray alloc]initWithCapacity:[eachPost[@"comment_count"] integerValue]];
                 NSArray *fetchedCommentsArray = eachPost[@"comments"];
                 for (NSDictionary *eachComment in fetchedCommentsArray) {
-                    SDComment *currentComment = [SDComment new];
-                    currentComment.ID = [eachComment[@"id"] integerValue];
-                    currentComment.name = eachComment[@"name"];
-                    currentComment.url = eachComment[@"url"];
-                    currentComment.date = eachComment[@"date"];
-                    currentComment.content = eachComment[@"content"];
-                    currentComment.parent = [eachComment[@"parent"] integerValue];
+                    
+                    SDComment *currentComment = [SDComment SDCommentFromDictionary:eachComment];
                     [allComments addObject:currentComment];
                 }
                 currentPost.commentsArray = [allComments copy];
@@ -106,12 +82,6 @@
     
 }
 
--(NSString *) stringByStrippingHTML:(NSString*)string{
-    NSRange r;
-    NSString *s = string;
-    while ((r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
-        s = [s stringByReplacingCharactersInRange:r withString:@""];
-    return s;
-}
+
 
 @end

@@ -52,6 +52,11 @@
 		9AFEBE60199CBA9B002A86EF /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFEBE4E199CBA9B002A86EF /* UIImageView+HighlightedWebCache.m */; };
 		9AFEBE61199CBA9B002A86EF /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFEBE50199CBA9B002A86EF /* UIImageView+WebCache.m */; };
 		9AFEBE62199CBA9B002A86EF /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFEBE52199CBA9B002A86EF /* UIView+WebCacheOperation.m */; };
+		C9C1D1FC19B928C500CC6057 /* SDPost+SDPostFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */; };
+		C9C1D1FF19B9295E00CC6057 /* NSString+StringByStrippingHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */; };
+		C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */; };
+		C9C1D20519B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */; };
+		C9C1D20819B92BD900CC6057 /* SDTag+SDTagFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C1D20719B92BD900CC6057 /* SDTag+SDTagFromDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +152,16 @@
 		9AFEBE50199CBA9B002A86EF /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		9AFEBE51199CBA9B002A86EF /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		9AFEBE52199CBA9B002A86EF /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		C9C1D1FA19B928C500CC6057 /* SDPost+SDPostFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDPost+SDPostFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDPost+SDPostFromDictionary.m"; sourceTree = "<group>"; };
+		C9C1D1FD19B9295E00CC6057 /* NSString+StringByStrippingHTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringByStrippingHTML.h"; sourceTree = "<group>"; };
+		C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringByStrippingHTML.m"; sourceTree = "<group>"; };
+		C9C1D20019B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDCategory+SDCategoryFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDCategory+SDCategoryFromDictionary.m"; sourceTree = "<group>"; };
+		C9C1D20319B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDComment+SDCommentFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDComment+SDCommentFromDictionary.m"; sourceTree = "<group>"; };
+		C9C1D20619B92BD900CC6057 /* SDTag+SDTagFromDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDTag+SDTagFromDictionary.h"; sourceTree = "<group>"; };
+		C9C1D20719B92BD900CC6057 /* SDTag+SDTagFromDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDTag+SDTagFromDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +278,16 @@
 				9AFEBE0B199CB224002A86EF /* SDPost.m */,
 				9AFEBE0C199CB224002A86EF /* SDTag.h */,
 				9AFEBE0D199CB224002A86EF /* SDTag.m */,
+				C9C1D1FA19B928C500CC6057 /* SDPost+SDPostFromDictionary.h */,
+				C9C1D1FB19B928C500CC6057 /* SDPost+SDPostFromDictionary.m */,
+				C9C1D1FD19B9295E00CC6057 /* NSString+StringByStrippingHTML.h */,
+				C9C1D1FE19B9295E00CC6057 /* NSString+StringByStrippingHTML.m */,
+				C9C1D20019B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.h */,
+				C9C1D20119B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m */,
+				C9C1D20319B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.h */,
+				C9C1D20419B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m */,
+				C9C1D20619B92BD900CC6057 /* SDTag+SDTagFromDictionary.h */,
+				C9C1D20719B92BD900CC6057 /* SDTag+SDTagFromDictionary.m */,
 			);
 			path = SDFeedParser;
 			sourceTree = "<group>";
@@ -443,8 +468,10 @@
 				9AFEBE30199CB22B002A86EF /* AFURLSessionManager.m in Sources */,
 				9AFEBE2D199CB22B002A86EF /* AFURLConnectionOperation.m in Sources */,
 				9AFEBE5B199CBA9B002A86EF /* SDWebImagePrefetcher.m in Sources */,
+				C9C1D20519B92B3C00CC6057 /* SDComment+SDCommentFromDictionary.m in Sources */,
 				9AFEBE62199CBA9B002A86EF /* UIView+WebCacheOperation.m in Sources */,
 				9AFEBE28199CB22B002A86EF /* AFHTTPRequestOperation.m in Sources */,
+				C9C1D1FF19B9295E00CC6057 /* NSString+StringByStrippingHTML.m in Sources */,
 				9AFEBE12199CB224002A86EF /* SDPost.m in Sources */,
 				9AFEBE5E199CBA9B002A86EF /* UIImage+MultiFormat.m in Sources */,
 				9AFEBE5F199CBA9B002A86EF /* UIImage+WebP.m in Sources */,
@@ -461,6 +488,8 @@
 				9AFEBE54199CBA9B002A86EF /* NSData+ImageContentType.m in Sources */,
 				9AFEBE2E199CB22B002A86EF /* AFURLRequestSerialization.m in Sources */,
 				9AFEBE2B199CB22B002A86EF /* AFNetworkReachabilityManager.m in Sources */,
+				C9C1D20219B92A9700CC6057 /* SDCategory+SDCategoryFromDictionary.m in Sources */,
+				C9C1D20819B92BD900CC6057 /* SDTag+SDTagFromDictionary.m in Sources */,
 				9AFEBE5A199CBA9B002A86EF /* SDWebImageManager.m in Sources */,
 				9AFEBE57199CBA9B002A86EF /* SDWebImageDecoder.m in Sources */,
 				9AFEBE59199CBA9B002A86EF /* SDWebImageDownloaderOperation.m in Sources */,
@@ -470,6 +499,7 @@
 				9AFEBE56199CBA9B002A86EF /* SDWebImageCompat.m in Sources */,
 				9AFEBE5C199CBA9B002A86EF /* UIButton+WebCache.m in Sources */,
 				9AFEBE60199CBA9B002A86EF /* UIImageView+HighlightedWebCache.m in Sources */,
+				C9C1D1FC19B928C500CC6057 /* SDPost+SDPostFromDictionary.m in Sources */,
 				9AFEBE5D199CBA9B002A86EF /* UIImage+GIF.m in Sources */,
 				9AFEBE55199CBA9B002A86EF /* SDImageCache.m in Sources */,
 			);
@@ -676,6 +706,7 @@
 				9AFEBDFD199CB21C002A86EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AFEBDFE199CB21C002A86EF /* Build configuration list for PBXNativeTarget "SDFeedParser-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +715,7 @@
 				9AFEBE00199CB21C002A86EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
