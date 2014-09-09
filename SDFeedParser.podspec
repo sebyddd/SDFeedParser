@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SDFeedParser"
-  s.version      = "0.1"
+  s.version      = "1.0"
   s.summary      = "Objective-C parser for the JSON API plugin for Wordpress."
   s.homepage     = "https://github.com/sebyddd/SDFeedParser"
   s.screenshots  = "https://dl.dropboxusercontent.com/s/5gvds2nhdjm6avd/sdfeedparser.png"
@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT (example)"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "Dobrincu Sebastian" => "sebyddd@gmail.com" }
-  s.platform     = :ios, "6.0"
+  s.author             = { "Sebastian Dobrincu" => "sebyddd@gmail.com" }
+  s.platform     = :ios, "7.0"
   s.source       = { 
   :git => "https://github.com/sebyddd/SDFeedParser.git", 
-  :tag => "0.1" }
+  :tag => "1.0" }
 
   s.source_files  = "SDFeedParser/*.{h,m}"
 
