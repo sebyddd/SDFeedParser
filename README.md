@@ -24,10 +24,18 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
 
 
 ## How to use
-       SDFeedParser *parser = [[SDFeedParser alloc]init];
-       [parser parseWithURL:@"http://yourblogURL.com/?json=1" withCompletion:^(NSArray *postsArray) {
-                NSLog(@"%@", postsArray);
-        }];
+       SDFeedParser *feedParser = [[SDFeedParser alloc]init];
+    [feedParser parseURL:@"http://yourBlog.com/?json=1" success:^(NSArray *postsArray, NSInteger postsCount) {
+        
+        NSLog(@"Fetched %ld posts", postsCount);
+        SDpostsArray = postsArray;
+        [self.tableView reloadData];
+        
+    }failure:^(NSError *error) {
+        
+        NSLog(@"Error: %@", error);
+        
+    }];
 
 
 ## Available properties
