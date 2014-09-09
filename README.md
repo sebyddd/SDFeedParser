@@ -3,7 +3,7 @@
 SDFeedParser  ![](http://img.shields.io/cocoapods/v/SDFeedParser.svg?style=flat)     -      ![](http://img.shields.io/cocoapods/p/SDFeedParser.svg?style=flat)   - 	      ![](http://img.shields.io/cocoapods/l/SDFeedParser.svg?style=flat)
 ============
 
-Objective-C parser for the JSON API (https://wordpress.org/plugins/json-api/) plugin for Wordpress
+Objective-C parser for the JSON API (https://wordpress.org/plugins/json-api/) plugin for Wordpress. The easiest and most effective way to parse your Wordpress blog's feed.
 
 
 ## Installation
