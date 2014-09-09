@@ -15,13 +15,13 @@
 
 @implementation SDFeedParser
 
-- (void)parseWithURL:(NSString *)urlString withCompletion:(CompletionBlock)completionBlock {
+- (void)parseURL:(NSString*)urlString success:(void (^)(NSArray *postsArray, NSInteger postsCount))successBlock failure:(void (^)(NSError *error))failureBlock{
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:urlString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
-          
+            
             //Get posts count
             _postsCount = [responseObject[@"count_total"] integerValue];
             
@@ -67,17 +67,20 @@
                 currentPost.commentsArray = [allComments copy];
                 currentPost.commentsCount = [eachPost[@"comment_count"] integerValue];
                 currentPost.status = responseObject[@"comment_status"];
-
+                
                 [allPosts addObject:currentPost];
             }
             _postsArray = [allPosts copy];
         }
         
-        //Trigger completion block
-        completionBlock(self.postsArray);
+        //Trigger success block
+        successBlock(self.postsArray, self.postsArray.count);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+        
+        //Trigger failure block
+        failureBlock(error);
+        
     }];
     
 }
