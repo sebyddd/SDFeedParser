@@ -20,7 +20,7 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
 ### Podfile
 
         platform :ios, '7.0'
-        pod "SDFeedParser", "~> "0.1"
+        pod "SDFeedParser", "~> "1.0"
 
 
 ## How to use
