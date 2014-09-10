@@ -17,7 +17,7 @@
     newPost.ID = [dictionary[@"id"] integerValue];
     newPost.slug = dictionary[@"slug"];
     newPost.URL = dictionary[@"url"];
-    newPost.title = dictionary[@"title"];
+    newPost.title = [NSString stringByStrippingHTML:dictionary[@"title"]];
     newPost.plainContent = dictionary[@"title_plain"];
     newPost.thumbnailURL = dictionary[@"thumbnail"];
     newPost.content = dictionary[@"content"];
