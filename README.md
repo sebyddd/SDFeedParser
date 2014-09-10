@@ -18,12 +18,13 @@ Objective-C parser for the JSON API (https://wordpress.org/plugins/json-api/) pl
 CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like SDFeedParser in your projects. See the "[Getting Started](http://guides.cocoapods.org/syntax/podfile.html)" guide for more information.
 
 ### Podfile
-
+```objective-c
         platform :ios, '7.0'
         pod "SDFeedParser", "~> "1.0"
-
+```
 
 ## How to use
+```objective-c
        SDFeedParser *feedParser = [[SDFeedParser alloc]init];
        [feedParser parseURL:@"http://yourBlog.com/?json=1" success:^(NSArray *postsArray, NSInteger postsCount) {
         
@@ -35,11 +36,11 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
         	NSLog(@"Error: %@", error);
         
        }];
-
+```
 
 ## Available properties
 **SDPost:**
-
+```objective-c
         @property (nonatomic) NSInteger ID;
         @property (nonatomic) NSString *URL;
         @property (nonatomic) NSString *slug;
@@ -59,34 +60,34 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
         @property (nonatomic) NSArray *commentsArray;
         @property (nonatomic) NSInteger commentsCount;
         @property (nonatomic) NSString *commentsStatus;
-
+```
 **SDComment:**
-
+```objective-c
         @property (nonatomic) NSInteger ID;
         @property (nonatomic) NSString *name;
         @property (nonatomic) NSString *url;
         @property (nonatomic) NSString *date;
         @property (nonatomic) NSString *content;
         @property (nonatomic) NSInteger parent;
-
+```
 **SDCategory:**
-
+```objective-c
         @property (nonatomic) NSInteger ID;
         @property (nonatomic) NSString *slug;
         @property (nonatomic) NSString *title;
         @property (nonatomic) NSString *categoryDescription;
         @property (nonatomic) NSInteger parent;
         @property (nonatomic) NSInteger postsCount;
-
+```
 
 **SDTag:**
-
+```objective-c
         @property (nonatomic) NSInteger ID;
         @property (nonatomic) NSString *slug;
         @property (nonatomic) NSString *title;
         @property (nonatomic) NSString *tagDescription;
         @property (nonatomic) NSInteger postsCount;
-
+```
 
 
 ##License
