@@ -7,7 +7,6 @@
 //
 
 #import "SDFeedParser.h"
-#import "AFNetworking.h"
 #import "SDPost+SDPostFromDictionary.h"
 #import "SDCategory+SDCategoryFromDictionary.h"
 #import "SDComment+SDCommentFromDictionary.h"
