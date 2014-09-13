@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 #import "SDPost.h"
 #import "SDCategory.h"
 #import "SDTag.h"
