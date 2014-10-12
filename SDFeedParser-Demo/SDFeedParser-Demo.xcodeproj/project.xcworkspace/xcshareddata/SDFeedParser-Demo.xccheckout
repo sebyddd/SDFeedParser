@@ -12,22 +12,34 @@
 	<dict>
 		<key>081EA463-093E-4C6D-88B8-10281D36F744</key>
 		<string>https://github.com/sebyddd/SDFeedParser.git</string>
+		<key>86393E466E69BA3CD1B8ABA426237E131FEAE932</key>
+		<string>https://github.com/sebyddd/SDFeedParser.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SDFeedParser-Demo.xcodeproj/project.xcworkspace</string>
+	<string>SDFeedParser-Demo/SDFeedParser-Demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>081EA463-093E-4C6D-88B8-10281D36F744</key>
-		<string>../..</string>
+		<string>../../../../SDFeedParser-Demo</string>
+		<key>86393E466E69BA3CD1B8ABA426237E131FEAE932</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/sebyddd/SDFeedParser.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>081EA463-093E-4C6D-88B8-10281D36F744</string>
+	<string>86393E466E69BA3CD1B8ABA426237E131FEAE932</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>86393E466E69BA3CD1B8ABA426237E131FEAE932</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SDFeedParser</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
