@@ -11,8 +11,8 @@
 
 @implementation SDPost (SDPostFromDictionary)
 
-+ (SDPost *)SDPostFromDictionary:(NSDictionary *)dictionary
-{
++ (SDPost *)SDPostFromDictionary:(NSDictionary *)dictionary{
+    
     SDPost *newPost = [SDPost new];
     newPost.ID = [dictionary[@"id"] integerValue];
     newPost.slug = dictionary[@"slug"];
